@@ -1,13 +1,22 @@
 interface Square {
-  kind: "square";
-  size: number;
+    kind: "square";
+    size: number;
 }
+
 interface Rectangle {
-  kind: "rectangle";
-  width: number;
-  height: number;
+    kind: "rectangle";
+    width: number;
+    height: number;
 }
-type Shape = Square | Rectangle;
+
+// Someone just added this new `Circle` Type
+// We would like to let TypeScript give an error at any place that *needs* to cater for this
+interface Circle {
+    kind: "circle";
+    radius: number;
+}
+
+type Shape = Square | Rectangle | Circle;
 
 function area(s: Shape) {
   if (s.kind === "square") {
