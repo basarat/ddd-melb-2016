@@ -1,5 +1,5 @@
 function foo(bar) {
-  /** Image a big body function */
+  /** Imagine a big body function */
 }
 
 /** Module */

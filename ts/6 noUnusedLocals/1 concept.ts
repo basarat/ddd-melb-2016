@@ -1,6 +1,6 @@
 function foo() {
   const bar = 123;
-  /** Image a big body function */
+  /** Imagine a big body function */
 }
 
 /** Module */
